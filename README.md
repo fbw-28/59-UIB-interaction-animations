@@ -4,4 +4,4 @@
 
 **Instructions**:
 
-Fix the code so the boxes start to strobe as you bring your cursor on them.
+* Edit the code to make the `div`s' background color fade in and out infinitely when a user's mouse hovers over the respective element. 
