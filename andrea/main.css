@@ -17,12 +17,13 @@ div {
 }
 
 .strobe {
-  animation-name: strobe;
+  animation: strobe 0.1ms 0.1s infinite linear alternate;
+/*   animation-name: strobe;
   animation-duration: 0.1ms;
   animation-delay: 0;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 .d1:hover {
