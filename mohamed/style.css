@@ -1,0 +1,51 @@
+
+body {
+    background-color: green;
+}
+
+.wrapper{
+    margin: 0;
+    padding: 0;
+   
+    width: 100%;
+    height: 100%;
+}
+div {
+    width: 250px;
+    height: 300px;
+    border: 1px solid rebeccapurple;
+    animation-name: anything;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+.strobe_1 {
+
+    background-color: orangered;
+    margin: 2px 5px 2px 5px;
+}
+.strobe_2 {
+    background-color: blue;
+    position: absolute;
+    top: 200px;
+    right: .5%;
+    
+}
+.strobe_3 {
+    background-color:yellow;
+    margin: 50% auto;
+
+}
+.strobe_4 {
+    background-color: green;
+    margin: -20% auto;
+}
+
+.strobe_5{
+    background-color:red;
+    margin: 80% auto;
+}
