@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid hotpink;
+  height: 100vh;
+}
+
+div {
+  border: 2px dotted chartreuse;
+  width: 20%;
+}
+
+.strobe_1 {
+  background: yellow;
+}
+
+.strobe_1:hover  {
+  
+  background: yellow;
+  animation: fading 4s linear infinite alternate-reverse;
+  /* transition: all 6s ease-out; */
+}
+
+.strobe_2:hover  {
+  
+  
+  animation: fading 4s linear infinite alternate-reverse;
+  /* transition: all 6s ease-out; */
+}
+
+.strobe_3:hover  {
+  
+  
+  animation: fading 4s linear infinite alternate-reverse;
+  /* transition: all 6s ease-out; */
+}
+
+.strobe_4:hover  {
+  
+ 
+  animation: fading 4s linear infinite alternate-reverse;
+  /* transition: all 6s ease-out; */
+}
+
+.strobe_5:hover  {
+  
+  
+  animation: fading 4s linear infinite alternate-reverse;
+  /* transition: all 6s ease-out; */
+}
+
+
+@keyframes fading {
+  
+  0%   { background: yellow; }
+  25%  { background: red; }
+  75%  { background: blue; }
+  100% { background: green; }
+}
