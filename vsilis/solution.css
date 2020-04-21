@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    display: flex;
+    align-items: stretch;
+    border: 2px solid rgb(88, 18, 53);
+    height: 100vh;
+  }
+  
+  div {
+      /* border: 2px solid blue; */
+      width: 20%;
+      animation-duration: 0.15s;
+      animation-iteration-count: infinite;
+      animation-duration: normal;
+      animation-play-state: paused;
+
+  }
+  .strobe_1 {
+
+      background-color: darkblue;
+      animation-name: strobe1;
+  }
+  .strobe_1:hover {
+      animation-play-state: running;
+  }
+    @keyframes strobe1 {
+        from {
+            background-color: darkblue;
+        }
+        to {
+            background-color: white;
+        }
+        
+    }
+
+
+        .strobe_2 {
+            background-color: rgb(3, 53, 10);
+            animation-name: strobe2;
+        }
+      .strobe_2:hover {
+          animation-play-state: running;
+      }
+        @keyframes strobe2 {
+            from {
+                background-color:  rgb(3, 82, 13);
+            }
+            to {
+                background-color: white;
+            }
+            
+        }
+        .strobe_3 {
+            background-color: rgb(170, 2, 2);
+            animation-name: strobe3;
+        
+        }
+      .strobe_3:hover {
+          animation-play-state: running;
+      }
+        @keyframes strobe3 {
+            from {
+                background-color: rgb(221, 13, 6);
+            }
+            to {
+                background-color: white
+            }
+            
+        }
+        .strobe_4 {
+            background-image: linear-gradient(180deg, rgba(238,208,0,1) 4%, rgba(136,44,144,0.5596330275229358) 39%, rgba(250,3,10,1) 86%);
+            animation-name: strobe4;
+        }
+        .strobe_4:hover {
+            animation-play-state: running;
+        }
+        @keyframes strobe4 {
+            from {
+                background-image: linear-gradient(180deg, rgba(238,208,0,1) 4%, rgba(136,44,144,0.5596330275229358) 39%, rgba(250,3,10,1) 86%);
+            }
+            to {
+                background-image: none;
+            }
+            
+        }
+        .strobe_5 {
+            background-image: linear-gradient(180deg, rgba(238,208,0,1) 4%, rgba(136,44,144,0.5596330275229358) 39%, rgba(250,3,10,1) 86%);
+            animation-name: strobe5;
+        
+        }
+      .strobe_5:hover {
+          animation-play-state: running;
+      }
+        @keyframes strobe5 {
+            from {
+                background-image: repeating-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(136,44,144,0.5596330275229358) 18%, rgba(0,0,0,1) 28%);
+            }
+            to {
+                background-image: none;
+            }
+            
+        }
