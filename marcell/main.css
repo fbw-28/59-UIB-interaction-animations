@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid hotpink;
+  height: 100vh;
+}
+
+div {
+  border: 2px dotted chartreuse;
+  width: 20%;
+  background-color: yellow;
+}
+
+.strobe_1:hover, .strobe_2:hover, .strobe_3:hover, .strobe_4:hover, .strobe_5:hover {
+  animation: strobe 0.5s linear infinite alternate;
+}
+
+@keyframes strobe {
+  from,to {
+    background-color: hotpink;
+  }
+
+  25% {
+    background-color: lawngreen;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  75% {
+    background-color: red;
+  }
+}
