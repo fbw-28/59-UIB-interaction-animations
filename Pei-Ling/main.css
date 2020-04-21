@@ -1,0 +1,54 @@
+.wrapper {
+    margin: 10% auto;  
+    background-color:pink;  
+    display: flex;
+    flex-direction: row;       
+    justify-content: space-evenly; 
+    animation-name: fade; 
+}   
+
+div {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.strobe_1,.strobe_2,.strobe_3,.strobe_4,.strobe_5 {
+    background-color: rebeccapurple;
+}
+  
+  .strobe_1,.strobe_2,.strobe_3,.strobe_4,.strobe_5 {
+    background-color: rebeccapurple;
+    animation: first 1s infinite alternate-reverse;
+  }
+
+.strobe_1:hover {    
+    animation: fade 2s infinite alternate-reverse;
+}
+
+.strobe_2:hover {
+    animation: fade 2s infinite alternate-reverse;
+}
+
+.strobe_3:hover {
+    animation: fade 2s infinite alternate-reverse;
+}
+
+.strobe_4:hover {
+    animation: fade 2s infinite alternate-reverse;
+}
+
+.strobe_5:hover {
+    animation: fade 2s infinite alternate-reverse;
+}
+
+
+@keyframes fade {
+    from,to {
+        background-color: green;
+      }
+    
+      50% {
+        background-color: transparent;
+      }    
+} 
