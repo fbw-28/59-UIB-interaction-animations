@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+/*   border: 2px solid hotpink; */
+  height: 100vh;
+}
+
+div {
+/*   border: 2px dotted chartreuse; */
+  width: 20%;
+}
+
+.strobe_1 {
+  background-color: yellow;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_1:hover {
+  background-color: yellow;
+  animation: first 2s infinite alternate-reverse;
+  animation-name: strobe_1;
+}
+
+@keyframes strobe_1 {
+  from,to {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+.strobe_2 {
+  background-color: greenyellow;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_2:hover {
+  background-color: greenyellow;
+  animation: first 2s infinite alternate-reverse;
+  animation-name: strobe_2;
+}
+
+@keyframes strobe_2 {
+  from,to {
+    background-color: greenyellow;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+.strobe_3 {
+  background-color: blue;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_3:hover {
+  background-color: blue;
+  animation: first 2s infinite alternate-reverse;
+  animation-name: strobe_3;
+}
+
+@keyframes strobe_3 {
+  from,to {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+.strobe_4 {
+  background-color: purple;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_4:hover {
+  background-color: purple;
+  animation: first 2s infinite alternate-reverse;
+  animation-name: strobe_4;
+}
+
+@keyframes strobe_4 {
+  from,to {
+    background-color: purple;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+.strobe_5 {
+  background-color: deeppink;
+  animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_5:hover {
+  background-color: deeppink;
+  animation: first 2s infinite alternate-reverse;
+  animation-name: strobe_5;
+}
+
+@keyframes strobe_5 {
+  from,to {
+    background-color:deeppink;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
