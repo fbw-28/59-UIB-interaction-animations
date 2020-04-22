@@ -20,39 +20,8 @@ div {
   background: yellow;
 }
 
-.strobe_1:hover  {
-  
-  background: yellow;
-  animation: fading 4s linear infinite alternate-reverse;
-  /* transition: all 6s ease-out; */
-}
-
-.strobe_2:hover  {
-  
-  
-  animation: fading 4s linear infinite alternate-reverse;
-  /* transition: all 6s ease-out; */
-}
-
-.strobe_3:hover  {
-  
-  
-  animation: fading 4s linear infinite alternate-reverse;
-  /* transition: all 6s ease-out; */
-}
-
-.strobe_4:hover  {
-  
- 
-  animation: fading 4s linear infinite alternate-reverse;
-  /* transition: all 6s ease-out; */
-}
-
-.strobe_5:hover  {
-  
-  
-  animation: fading 4s linear infinite alternate-reverse;
-  /* transition: all 6s ease-out; */
+.strobe_1:hover, .strobe_2:hover, .strobe_3:hover, .strobe_4:hover, .strobe_5:hover {
+  animation: fading 1s linear infinite alternate-reverse;
 }
 
 
