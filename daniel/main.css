@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  border: 2px solid hotpink;
+  height: 100vh;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px dotted chartreuse;
+}
+
+.strobe_1 {
+  background-color: yellow;
+}
+
+.strobe_1:hover {
+  animation: first 1s infinite alternate-reverse;
+}
+
+.strobe_2 {
+  background-color: blue;
+}
+
+.strobe_2:hover {
+  animation: second 1s infinite alternate;
+}
+
+.strobe_3 {
+  background-color: red;
+}
+
+.strobe_3:hover {
+  animation: third 1s infinite alternate;
+}
+
+.strobe_4 {
+  background-color: green;
+}
+
+.strobe_4:hover {
+  animation: forth 1s infinite alternate;
+}
+
+.strobe_5 {
+  background-color: purple;
+}
+
+.strobe_5:hover {
+  animation: fifth 1s infinite alternate;
+}
+
+/* ##### KEYFRAMES ##### */
+
+@keyframes first {
+
+  to {
+    background-color: transparent;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes second {
+
+  25% {
+    background-color: transparent;
+    transform: translate(200px, 0px);
+  }
+
+  50% {
+    background-color: blue;
+    transform: translate(200px, 200px);
+  }
+
+  75% {
+    background-color: transparent;
+    transform: translate(0, 200px);
+  }
+
+  100% {
+    background-color: blue;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes third {
+
+  50% {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: red;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes forth {
+
+  50% {
+    opacity: .5;
+    transform: scale(2.5) rotateX(-90deg);
+  }
+
+  100% {
+    background-color: green;
+    transform: scale(1) rotateX(-180deg);
+  }
+}
+
+@keyframes fifth {
+
+  to {
+    background-color: transparent;
+    box-shadow: inset 5px 5px 50px grey;
+  }
+}
