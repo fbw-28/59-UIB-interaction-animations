@@ -1,51 +1,30 @@
 
-body {
-    background-color: green;
-}
 
 .wrapper{
     margin: 0;
     padding: 0;
-   
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
 }
 div {
-    width: 250px;
-    height: 300px;
-    border: 1px solid rebeccapurple;
-    animation-name: anything;
-    animation-duration: 5s;
-    animation-delay: 10s;
-    animation-iteration-count: infinite;
-
-
-
-}
-
-.strobe_1 {
-
-    background-color: orangered;
-    margin: 2px 5px 2px 5px;
-}
-.strobe_2 {
-    background-color: blue;
-    position: absolute;
-    top: 200px;
-    right: .5%;
+    margin: 0 auto;
+    width: 150px;
+    height: 200px;
+    display: block;
+    background-color: rgb(56, 200, 51);
+    transition: 2s;
+    transition-timing-function: (cubic-bezier(0.55, 0.085, 0.68, 0.53),.01,.11,.39);
+    font-size: 30px;
     
-}
-.strobe_3 {
-    background-color:yellow;
-    margin: 50% auto;
 
 }
-.strobe_4 {
-    background-color: green;
-    margin: -20% auto;
-}
 
-.strobe_5{
-    background-color:red;
-    margin: 80% auto;
+div:hover {
+    transform: translate(-500px, 800px);
+    background-color:yellow);
+   
 }
