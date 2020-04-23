@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid hotpink;
+  height: 100vh;
+}
+
+div {
+  border: 2px dotted chartreuse;
+  width: 20%;
+}
+
+.strobe_1 {
+  background: yellow;
+}
+
+.strobe_1:hover, .strobe_2:hover, .strobe_3:hover, .strobe_4:hover, .strobe_5:hover {
+  animation: fading 1s linear infinite alternate-reverse;
+}
+
+
+@keyframes fading {
+  
+  0%   { background: yellow; }
+  25%  { background: red; }
+  75%  { background: blue; }
+  100% { background: green; }
+}
