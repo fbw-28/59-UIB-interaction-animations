@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid hotpink;
+  height: 100vh;
+}
+
+div {
+  border: 2px dotted chartreuse;
+  width: 20%;
+  transition: 0.5s all;
+}
+
+.strobe_1 {
+  background-color: yellow;
+}
+
+.strobe_2 {
+  background-color: green;
+}
+
+.strobe_3 {
+  background-color: purple;
+}
+
+.strobe_4 {
+  background-color: aqua;
+}
+
+.strobe_5 {
+  background-color: red;
+}
+
+.strobe_1:hover,
+.strobe_2:hover,
+.strobe_3:hover,
+.strobe_4:hover,
+.strobe_5:hover {
+  animation: fade 2s linear infinite alternate-reverse;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
