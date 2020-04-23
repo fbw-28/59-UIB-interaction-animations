@@ -14,113 +14,47 @@
 div {
   border: 2px dotted chartreuse;
   width: 20%;
+  transition: 0.5s all;
 }
 
 .strobe_1 {
   background-color: yellow;
 }
 
-.strobe_1:hover {
-  background-color: yellow;
-  animation: strobe_1 2s infinite alternate-reverse;
-}
-
-@keyframes strobe_1 {
-
-  from,
-  to {
-    background-color: yellow;
-  }
-
-  50% {
-    background-color: transparent;
-  }
-}
-
-/* 2 */
 .strobe_2 {
   background-color: green;
 }
 
-.strobe_2:hover {
-  background-color: green;
-  animation: strobe_2 2s infinite alternate-reverse;
-}
-
-@keyframes strobe_2 {
-
-  from,
-  to {
-    background-color: green;
-  }
-
-  50% {
-    background-color: transparent;
-  }
-}
-
-/* 3 */
 .strobe_3 {
   background-color: purple;
 }
 
-.strobe_3:hover {
-  background-color: purple;
-  animation: strobe_3 2s infinite alternate-reverse;
-}
-
-@keyframes strobe_3 {
-
-  from,
-  to {
-    background-color: purple;
-  }
-
-  50% {
-    background-color: transparent;
-  }
-}
-
-/* 4 */
 .strobe_4 {
   background-color: aqua;
 }
 
-.strobe_4:hover {
-  background-color: aqua;
-  animation: strobe_4 2s infinite alternate-reverse;
-}
-
-@keyframes strobe_4 {
-
-  from,
-  to {
-    background-color: aqua;
-  }
-
-  50% {
-    background-color: transparent;
-  }
-}
-
-/* 5 */
 .strobe_5 {
   background-color: red;
 }
 
+.strobe_1:hover,
+.strobe_2:hover,
+.strobe_3:hover,
+.strobe_4:hover,
 .strobe_5:hover {
-  background-color: red;
-  animation: strobe_5 2s infinite alternate-reverse;
+  animation: fade 2s linear infinite alternate-reverse;
 }
 
-@keyframes strobe_5 {
-
-  from,
-  to {
-    background-color: red;
+@keyframes fade {
+  from {
+    opacity: 1;
   }
 
   50% {
     background-color: transparent;
+  }
+
+  to {
+    opacity: 1;
   }
 }
