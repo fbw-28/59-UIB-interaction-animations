@@ -1,0 +1,30 @@
+
+
+.wrapper{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+}
+div {
+    margin: 0 auto;
+    width: 150px;
+    height: 200px;
+    display: block;
+    background-color: rgb(56, 200, 51);
+    transition: 2s;
+    transition-timing-function: (cubic-bezier(0.55, 0.085, 0.68, 0.53),.01,.11,.39);
+    font-size: 30px;
+    
+
+}
+
+div:hover {
+    transform: translate(-500px, 800px);
+    background-color:yellow);
+   
+}
